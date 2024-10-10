@@ -1,0 +1,212 @@
+@import url("global.css");
+
+.minicart {
+  position: relative;
+}
+
+.minicart-summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.minicart-main {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 61px;
+
+  width: 404px;
+  height: auto;
+  margin: 0px 16px;
+  border-radius: 8px;
+
+  background-color: white;
+}
+
+.minicart-title {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 24px;
+  padding: 10px 32px;
+
+  border-bottom: 1px solid var(--gray-200);
+
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+.minicart-excluir {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 18px;
+  padding: 10px 32px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #ccc9;
+}
+
+.minicart-excluir p {
+  color: var(--brown-400);
+  text-decoration: underline;
+}
+
+.minicart-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 16px;
+}
+
+.minicart-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  padding: 10px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.minicart-footer-button {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 300px;
+
+  padding: 10px 32px;
+}
+
+.minicart-footer-button button {
+  width: 339px;
+  height: 48px;
+
+  font-size: 24px;
+
+  background-color: var(--brown-400);
+  color: var(--gray-200);
+
+  border: none;
+  border-radius: 5px;
+}
+
+.minicart-footer-item {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 16px;
+  padding: 5px 32px;
+}
+
+.minicart-footer-item-title {
+  color: var(--gray-900);
+}
+
+.minicart-footer-item span {
+  font-size: 24px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/*
+Estilização da DOM < CLASSLIST
+*/
+
+.card-product-img-cart {
+  width: 48px;
+  height: 48px;
+}
+
+.deleteCartItems {
+  border: none;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  color: var(--brown-400);
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.div-product-cart {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--Surface-Dark, #eeeeed);
+}
+
+.productListCart {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 30px;
+  border-bottom: 1px solid var(--Surface-Dark, #eeeeed);
+}
+
+.divElementContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.trash {
+  all: unset;
+  position: absolute;
+  right: 0;
+}
+
+.divElementContentPrice {
+  display: flex;
+  margin-top: 20px;
+}
+
+.inputQuantity {
+  all: unset;
+  text-align: center;
+  width: 44px;
+}
+
+.priceElementProduct {
+  color: var(--Text-Dark, #31312f);
+  font-family: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin-right: auto;
+}
+
+.divElementContentQuantity {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+
+  border-radius: var(--corner-radius, 4px);
+  border: 1px solid var(--Surface-Dark, #eeeeed);
+  background: var(--Surface-Surface, #fefdfc);
+}
+
+.quantityBtnElementProduct {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.titleElementProduct {
+  color: var(--Text-Normal, #8d8d86);
+  margin-bottom: 8px;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
